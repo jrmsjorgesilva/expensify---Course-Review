@@ -1,0 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.is-active {
+  font-weight: bold;
+}
