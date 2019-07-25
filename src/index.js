@@ -14,6 +14,7 @@ const state = store.getState();
 const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
 
 console.log(visibleExpenses);
+//torna visiveis as despesas
 
 ReactDOM.render(
   <Provider store={store}>
