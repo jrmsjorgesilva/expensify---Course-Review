@@ -3,6 +3,7 @@
 # dependencies
 /yarn.lock
 /node_modules
+/server
 /.pnp
 .pnp.js
 
