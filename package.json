@@ -5,6 +5,8 @@
   "dependencies": {
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
+    "firebase": "^6.3.3",
+    "firebase-tools": "^7.2.1",
     "jest-enzyme": "^7.0.2",
     "moment": "^2.24.0",
     "normalize": "^0.3.1",
