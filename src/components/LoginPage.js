@@ -5,9 +5,13 @@ import { connect } from "react-redux";
 export const LoginPage = ({ startLogin }) => {
   return (
     <div className="box-layout">
-      <button onClick={startLogin} className="button--secondary">
-        Login
-      </button>
+      <div className="box-layout__box">
+        <h1>Expensify is cheap!</h1>
+        <p>It's time to control your money</p>
+        <button onClick={startLogin} className="button--secondary">
+          Login
+        </button>
+      </div>
     </div>
   );
 };

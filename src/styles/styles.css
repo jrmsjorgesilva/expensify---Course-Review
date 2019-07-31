@@ -15,9 +15,9 @@ html {
 }
 
 body {
-  color: $dark-grey;
+  color: #333;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: $m-size;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 
@@ -48,29 +48,29 @@ button:disabled {
 }
 
 .box-layout__box {
-  background: fade-out(white, 0.15);
+  background: #f5fbfe;
   border-radius: 3px;
-  padding: $l-size $m-size;
+  padding: 3.2rem 1.6rem;
   text-align: center;
   width: 25rem;
 }
 
 .box-layout__title {
-  margin: 0 0 $m-size 0;
+  margin: 0 0 1.6rem 0;
   line-height: 1;
 }
 
 /* button */
 
 .button {
-  background: $blue;
+  background: #1c88bf;
   border: none;
   color: white;
   display: inline-block;
-  font-size: $font-size-large;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 1;
-  padding: $s-size;
+  padding: 1.2rem;
   text-decoration: none;
 }
 
@@ -84,7 +84,7 @@ button:disabled {
 
 .content-container {
   margin: 0 auto;
-  padding: 0 $m-size;
+  padding: 0 1.6rem;
   max-width: 80rem;
 }
 
@@ -94,26 +94,26 @@ button:disabled {
   display: flex;
   flex-direction: column;
   > * {
-    margin-bottom: $m-size;
+    margin-bottom: 1.6rem;
   }
 }
 
 .form__error {
-  margin: 0 0 $m-size 0;
+  margin: 0 0 1.6rem 0;
   font-style: italic;
 }
 
 /* header */
 
 .header {
-  background: $dark-blue;
+  background: #364051;
 }
 
 .header__content {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: $s-size 0;
+  padding: 1.2rem 0;
 }
 
 .header__title {
@@ -129,17 +129,17 @@ button:disabled {
 .input-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: $m-size;
-  @media (min-width: $desktop-breakpoint) {
+  margin-bottom: 1.6rem;
+  @media (min-width: 45rem) {
     flex-direction: row;
-    margin-bottom: $l-size;
+    margin-bottom: 3.2rem;
   }
 }
 
 .input-group__item {
-  margin-bottom: $s-size;
-  @media (min-width: $desktop-breakpoint) {
-    margin: 0 $s-size 0 0;
+  margin-bottom: 1.2rem;
+  @media (min-width: 45rem) {
+    margin: 0 1.2rem 0 0;
   }
 }
 
@@ -148,9 +148,9 @@ button:disabled {
 .text-input {
   border: 1px solid #cacccd;
   height: 50px;
-  font-size: $font-size-large;
+  font-size: 1.8rem;
   font-weight: 300;
-  padding: $s-size;
+  padding: 1.2rem;
 }
 
 .select {
@@ -165,46 +165,46 @@ button:disabled {
 /* list */
 
 .list-header {
-  background: $off-white;
-  border: 1px solid darken($off-white, 7%);
-  color: $grey;
+  background: #f7f7f7;
+  border: 1px solid darken(#f7f7f7, 7%);
+  color: #666;
   display: flex;
   justify-content: space-between;
-  padding: $s-size $m-size;
+  padding: 1.2rem 1.6rem;
 }
 
 .list-body {
-  margin-bottom: $m-size;
-  @media (min-width: $desktop-breakpoint) {
-    margin-bottom: $l-size;
+  margin-bottom: 1.6rem;
+  @media (min-width: 45rem) {
+    margin-bottom: 1.2rem;
   }
 }
 
 .list-item {
-  border: 1px solid darken($off-white, 7%);
+  border: 1px solid darken(#f7f7f7, 7%);
   border-top: none;
-  color: $dark-grey;
+  color: #333;
   display: flex;
   flex-direction: column;
-  padding: $s-size;
+  padding: 1.2rem;
   text-decoration: none;
   transition: background 0.3s ease;
   &:hover {
-    background: $off-white;
+    background: #f7f7f7;
   }
-  @media (min-width: $desktop-breakpoint) {
+  @media (min-width: 45rem) {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    padding: $m-size;
+    padding: 1.6rem;
   }
 }
 
 .list-item--message {
   align-items: center;
-  color: $grey;
+  color: #666;
   justify-content: center;
-  padding: $m-size;
+  padding: 1.6rem;
   &:hover {
     background: none;
   }
@@ -216,15 +216,15 @@ button:disabled {
 }
 
 .list-item__sub-title {
-  color: $grey;
-  font-size: $font-size-small;
+  color: #666;
+  font-size: 1.4rem;
 }
 
 .list-item__data {
-  margin: $s-size 0 0 0;
-  @media (min-width: $desktop-breakpoint) {
+  margin: 1.2rem 0 0 0;
+  @media (min-width: 45rem) {
     margin: 0;
-    padding-left: $s-size;
+    padding-left: 1.2rem;
   }
 }
 
@@ -246,13 +246,13 @@ button:disabled {
 /* page */
 
 .page-header {
-  background: $off-white;
-  margin-bottom: $l-size;
-  padding: $l-size 0;
+  background: #f7f7f7;
+  margin-bottom: 3.2;
+  padding: 3.2rem 0;
 }
 
 .page-header__actions {
-  margin-top: $m-size;
+  margin-top: 1.6rem;
 }
 
 .page-header__title {
@@ -266,13 +266,13 @@ button:disabled {
 /* show */
 
 .show-for-mobile {
-  @media (min-width: $desktop-breakpoint) {
+  @media (min-width: 45rem) {
     display: none;
   }
 }
 
 .show-for-desktop {
-  @media (max-width: $desktop-breakpoint - 0.01rem) {
+  @media (max-width: 45rem - 0.01rem) {
     display: none;
   }
 }
