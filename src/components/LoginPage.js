@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 
 export const LoginPage = ({ startLogin }) => {
   return (
-    <div>
+    <div className="box-layout">
       <button onClick={startLogin} className="button--secondary">
         Login
       </button>
