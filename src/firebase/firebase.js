@@ -1,4 +1,4 @@
-import * as firebase from 'firebase';
+import * as firebase from "firebase";
 
 const config = {
   apiKey: "AIzaSyDAfytAt6EzVmN2dJqR5bO7X_QN7LnGmoo",
@@ -14,8 +14,9 @@ const config = {
 firebase.initializeApp(config);
 
 const database = firebase.database();
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
-export { firebase, database as default };
+export { firebase, googleAuthProvider, database as default };
 
 //
 // //CHILD_REMOVED
@@ -51,7 +52,6 @@ export { firebase, database as default };
 //     console.log(expenses);
 //   });
 
-
 // database.ref('expenses').on('value', (snapshot) => {
 //   const expenses = [];
 //   snapshot.forEach((childSnapshot) => {
@@ -62,7 +62,6 @@ export { firebase, database as default };
 //   });
 //   console.log(expenses);
 // });
-
 
 //INSERINDO ARRAYS NO BD COM PUSH()
 // database.ref(`expenses`)
@@ -96,8 +95,6 @@ export { firebase, database as default };
 // database.ref().set({
 //   name: 'john burner'
 // });
-
-
 
 // const firebaseNotes = {
 //   notes: {
@@ -136,12 +133,9 @@ export { firebase, database as default };
 //   console.log(`${obj.name} is a ${obj.job.title} at ${obj.job.company}!`);
 // });
 
-
 // database.ref('location').on('value', (snapshot) => {
 //   console.log(snapshot.val());
 // });
-
-
 
 // database.ref('location').on('value', (snapshot) => {
 //   console.log(snapshot.val());
@@ -167,7 +161,6 @@ export { firebase, database as default };
 //   .catch((e) => {
 //     console.log('error fetching data', e);
 //   });
-
 
 // database.ref().set({
 //   name: 'jorge',
@@ -197,7 +190,6 @@ export { firebase, database as default };
 //   console.log('error', e);
 // });
 
-
 //UPDATE
 // database.ref().update({
 //   name: 'mike',                             //atualiza campo especifico
@@ -205,7 +197,6 @@ export { firebase, database as default };
 //   job: 'garbage collector',                 //adiciona campo especifico
 //   isSingle: null                            //apaga campo especifico
 // });
-
 
 //REMOVENDO DATABASES
 // database.ref('isSingle').set(null);          //remove only 'isSingle'
