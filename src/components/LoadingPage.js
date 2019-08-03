@@ -2,7 +2,7 @@ import React from "react";
 
 const LoadingPage = () => (
   <div className="loader">
-    <img className="loader__image" src="/images/loader.png" />
+    <img className="loader__image" alt='' src="/images/loader.png" />
   </div>
 );
 

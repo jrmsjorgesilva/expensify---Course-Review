@@ -1,19 +1,26 @@
 import * as firebase from "firebase";
 
 const config = {
-  apiKey: "AIzaSyDAfytAt6EzVmN2dJqR5bO7X_QN7LnGmoo",
-  authDomain: "expensifyapp-2-the-revenge.firebaseapp.com",
-  databaseURL: "https://expensifyapp-2-the-revenge.firebaseio.com",
-  projectId: "expensifyapp-2-the-revenge",
+  apiKey: "AIzaSyD_6a0VKemp3gcoRM4AtDeyfSE6EzHp6Yg",
+  authDomain: "databudgetfy.firebaseapp.com",
+  databaseURL: "https://databudgetfy.firebaseio.com",
+  projectId: "databudgetfy",
   storageBucket: "",
-  messagingSenderId: "850843005058",
-  appId: "1:850843005058:web:536dac4cda0adc5a"
+  messagingSenderId: "815920256920",
+  appId: "1:815920256920:web:38559bbc1589039a"
 };
 
 // Initialize Firebase
 firebase.initializeApp(config);
 
 const database = firebase.database();
+
+database.ref('expenses').set({
+  name: 'antonio',
+  age: 23,
+  city: 'Goiania'
+});
+
 const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
 export { firebase, googleAuthProvider, database as default };

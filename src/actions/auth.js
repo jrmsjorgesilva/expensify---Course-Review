@@ -1,4 +1,3 @@
-import React from "react";
 import { firebase, googleAuthProvider } from "../firebase/firebase";
 
 //LOGIN
@@ -9,7 +8,9 @@ export const login = uid => ({
 
 export const startLogin = () => {
   return () => {
-    return firebase.auth().signInWithPopup(googleAuthProvider);
+    return firebase
+      .auth()
+      .signInWithPopup(googleAuthProvider)
   };
 };
 

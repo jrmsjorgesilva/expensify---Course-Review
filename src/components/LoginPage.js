@@ -1,6 +1,6 @@
 import React from "react";
-import { startLogin } from "../actions/auth";
 import { connect } from "react-redux";
+import { startLogin } from "../actions/auth";
 
 export const LoginPage = ({ startLogin }) => {
   return (
